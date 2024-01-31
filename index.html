@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kebsuuuu.site</title>
+  <link rel="icon" href="https://cdn.discordapp.com/emojis/1124113837050839050.webp?size=96&quality=lossless">
+  <meta property="og:title" content="૮꒰ྀི >⸝⸝⸝< ꒱ྀིა">
+  <meta property="og:description" content="૮꒰ྀི >⸝⸝⸝< ꒱ྀིა" />
+  <meta property="og:url" content="Kebsuuuu.site" />
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/1139254800312172656/1156096993836400720/6c43b34f1c6feefe384ffeafb8de2b76.png?ex=6513baba&is=6512693a&hm=227f6e7021d4a3ec22003ec650fadf772a23a0383124bb3ecf5a2bf262580579&" />
+  <meta property="twitter:image" content="IMGUR-IMAGE-HERE" />
+  <meta name="twitter:card" content="https://cdn.discordapp.com/attachments/1139254800312172656/1156096993836400720/6c43b34f1c6feefe384ffeafb8de2b76.png?ex=6513baba&is=6512693a&hm=227f6e7021d4a3ec22003ec650fadf772a23a0383124bb3ecf5a2bf262580579&" />
+  <meta name="twitter:title" content="૮꒰ྀི >⸝⸝⸝< ꒱ྀིა" />
+  <meta name="twitter:description" content="૮꒰ྀི >⸝⸝⸝< ꒱ྀིა" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/vanphonggiang/font-awesome-6-pro/css/all.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/card.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+  
+  <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+  <script type="module">
+    import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+    new cursoreffects.fairyDustCursor({
+colors: ["#E8616F", "#EFA3C9", "#FFFFFF", "#3E8DEA"],
+});
+  </script>
+</head>
+
+<body scrolling="no">
+    <audio id="bgAudio" loop style="display: none;">
+      <source src="./assets/files/1music.mp3" type="audio/mp3">
+    </source></audio>
+    <div id="clickHere" class="full-screen cursor-grab">
+      <button id="enterButton" class="cursor-grabbing button button-text">
+        Klikaj!!! :3
+      </button>
+    </div>
+  <div id="wrapper">
+    <div id="card">
+     <!--===== DISCORD PROFILE BANNER | I recommend using an Imgur link (BBCode (Forums) like this: https://i.imgur.com/Jd3KfCU.png =====-->
+      <div id="banner" style="background-image: url(https://i.imgur.com/d1RVoas.jpeg);"></div> 
+      <div id="user-info">
+        <div id="avatar">
+          <img
+            src="https://i.imgur.com/nKkd7vY.jpeg"
+            alt="owo">
+          <div id="status"></div>
+        </div>
+
+        <!--===== BADGES =====-->
+
+        <div id="badges">
+        </div>
+
+        <!--===== NAME =====-->
+
+        <div id="username">Kebsuuuu<span>#0</span></div>
+      </div>
+      <hr/>
+
+      <!--===== ABOUT ME =====-->
+
+      <div id="about">
+        <h4>About me</h4>
+        <p id="typedText">Kebsuuuu</p>
+      </div>
+
+      <!--===== ACTIVITY =====-->
+
+      <div id="activity">
+        <h4>Playing a game</h4>
+        <iframe src="https://lanyard.cnrad.dev/api/902988153701404742?&hideProfile=true" id="game" frameborder="0" width="410" height="130"></iframe>
+      </div>
+
+      <!--===== SOCIAL =====-->
+
+      <div id="social">
+        <a class="social-link" href="https://open.spotify.com/user/31437emsyadyt2etn3qlw2svqouq" target="_blank">
+          <i class="fa-brands fa-spotify" style="font-size:28px; text-shadow: 0 0 0.10em rgb(255, 255, 255); color: #FFFFFF;"></i>
+        </a>
+
+        <a class="social-link" href="https://soundcloud.com/kebsuu" target="_blank">
+          <i class="fa-brands fa-soundcloud" style="font-size:28px; text-shadow: 0 0 0.10em rgb(255, 255, 255); color: #FFFFFF;"></i>
+        </a>
+  
+        <a class="social-link" href="https://discordapp.com/users/902988153701404742" target="_blank">
+          <i class="fa-brands fa-discord" style="font-size:28px; text-shadow: 0 0 0.10em rgb(255, 255, 255); color: #FFFFFF;"></i>
+        </a>
+
+        <a class="social-link" href="https://github.com/kebsuuuu" target="_blank">
+          <i class="fa-brands fa-github" style="font-size:28px; text-shadow: 0 0 0.10em rgb(255, 255, 255); color: #FFFFFF;"></i>
+        </a>
+                 <!--==== To create more, just copy from "<a" to "</a>"
+                           and paste then edit as you want ====-->
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+
+  <script src="assets/js/socket.js"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/index.js"></script>
+
+  <script>
+    type(["Szef (*≧ω≦*)", "noobek :3", "Bielsko enjoyer ^_^", "nolife ＼(＾▽＾)／", "alkoholik?? >_<"], typewriterElement,textIndex,charIndex,isDeleting, isLineVisible);
+    updateTitle("kebsuuuu.site <3 ");
+  </script>
+</body>
+
+</html>
